@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { CiFileOn } from "react-icons/ci";
-import { FaRegTrashAlt } from "react-icons/fa";
+// import { FaRegTrashAlt } from "react-icons/fa";
 import PageLayout from "../layout/PageLayout";
 
 const Profile = () => {
