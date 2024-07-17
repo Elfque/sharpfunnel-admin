@@ -34,40 +34,13 @@ const data = [
     uv: 1890,
     pv: 4800,
   },
-  {
-    name: "Page F",
-    uv: 2390,
-    pv: 3800,
-  },
-  {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-  },
 ];
 
-const PerformanceStatistics = () => {
+const UserEngagement = () => {
   return (
     <div className="bg-white p-4">
       <div className="flex justify-between">
-        <div className="mb-5">Performance Statistic</div>
-
-        <div className="flex gap-4 items-center">
-          <input
-            type="date"
-            name=""
-            id=""
-            className="text-inputBorder border-inputBorder border text-xs py-2 px-4 rounded"
-          />
-
-          <select
-            name=""
-            id=""
-            className="text-inputBorder border-inputBorder border text-xs py-2 px-4 rounded"
-          >
-            <option value="">Month</option>
-          </select>
-        </div>
+        <div className="mb-5">User Engagement (Month)</div>
       </div>
 
       <ResponsiveContainer width="100%" height={300}>
@@ -78,11 +51,10 @@ const PerformanceStatistics = () => {
           <Tooltip />
 
           <Bar dataKey="pv" fill="#5B58EB" />
-          <Bar dataKey="uv" fill="#A3C0FF" />
         </BarChart>
       </ResponsiveContainer>
     </div>
   );
 };
 
-export default PerformanceStatistics;
+export default UserEngagement;

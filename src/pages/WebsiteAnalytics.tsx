@@ -1,17 +1,13 @@
-import LeadStatistics from "../components/dashboard/LeadStatistics";
-import PerformanceStatistics from "../components/dashboard/PerformanceStatistics";
-import TotalSales from "../components/dashboard/TotalSales";
-import TrafficStats from "../components/dashboard/TrafficStats";
 import SingleOverview from "../components/SingleOverviewCard";
 import PageLayout from "../layout/PageLayout";
 
-const Dashboard = () => {
+const WebsiteAnalytics = () => {
   return (
-    <PageLayout title="My Dashboard">
+    <PageLayout title="Website Management">
       <div className="grid grid-cols-4 gap-6 mt-6">
         <SingleOverview
-          text="Total Users"
-          data={3.5}
+          text="Total Orders"
+          data={30}
           type="orders"
           icon={
             <svg
@@ -32,8 +28,8 @@ const Dashboard = () => {
         />
 
         <SingleOverview
-          text="Active Users"
-          data={40000}
+          text="Total Visits"
+          data={40}
           type="visits"
           icon={
             <svg
@@ -54,30 +50,8 @@ const Dashboard = () => {
         />
 
         <SingleOverview
-          text="New Sign-ups"
-          data={5000}
-          type="pages"
-          icon={
-            <svg
-              width="28"
-              height="27"
-              viewBox="0 0 28 27"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M26.6494 24.2332C25.8917 22.5038 22.2352 21.3509 19.7976 20.2803C17.3599 19.2097 17.6894 18.5509 17.607 17.6614C17.5905 17.5462 17.5905 17.4144 17.5905 17.2826C18.4305 16.5414 19.1058 15.5203 19.5505 14.3509C19.5505 14.3509 19.567 14.285 19.5835 14.2685C19.6823 14.0214 19.7647 13.7414 19.8305 13.4779C20.3905 13.3626 20.7199 12.7532 20.8352 12.1932C20.967 11.9626 21.2141 11.4026 21.1647 10.7603C21.0823 9.93674 20.7529 9.55792 20.3905 9.40968C20.3905 9.36027 20.3905 9.31086 20.3905 9.26145C20.3905 8.2238 20.2917 6.70851 20.1105 5.72027C20.0776 5.44027 20.0117 5.17674 19.9294 4.89674C19.567 3.69439 18.8258 2.59086 17.8211 1.83321C16.767 1.05909 15.3011 0.630859 13.9999 0.630859C12.6988 0.630859 11.2329 1.04262 10.1952 1.83321C9.19054 2.60733 8.44936 3.69439 8.08701 4.89674C8.00465 5.17674 7.93877 5.44027 7.90583 5.72027C7.70818 6.70851 7.62583 8.20733 7.62583 9.26145C7.62583 9.31086 7.62583 9.3438 7.62583 9.39321C7.23054 9.54145 6.88465 9.92027 6.8023 10.7603C6.75289 11.3862 7.01642 11.9462 7.13171 12.1767C7.26348 12.7532 7.59289 13.3626 8.16936 13.4614C8.23524 13.7414 8.3176 14.005 8.41642 14.2685C8.41642 14.285 8.43289 14.3014 8.43289 14.3179L8.44936 14.3344C8.89407 15.5203 9.6023 16.5579 10.4588 17.2991C10.4588 17.4144 10.4423 17.5297 10.4423 17.645C10.3599 18.5344 10.607 19.1932 8.18583 20.2638C5.74818 21.3344 2.09171 22.4873 1.33407 24.2167C0.576419 25.9462 0.88936 26.9673 0.88936 26.9673H27.1105C27.0941 26.9838 27.407 25.9626 26.6494 24.2332Z"
-                fill="#F5B849"
-              />
-            </svg>
-          }
-        />
-
-        <SingleOverview
-          text="Websites Created"
-          data={30000}
+          text="Total Leads"
+          data={300}
           type=""
           icon={
             <svg
@@ -97,24 +71,8 @@ const Dashboard = () => {
           }
         />
       </div>
-
-      <div className="">
-        <div className="grid md:grid-cols-10 gap-2">
-          <div className="md:col-span-6">
-            <PerformanceStatistics />
-          </div>
-          <div className="md:col-span-4">
-            <TrafficStats />
-          </div>
-        </div>
-
-        <div className="grid md:grid-cols-2">
-          <TotalSales />
-          <LeadStatistics />
-        </div>
-      </div>
     </PageLayout>
   );
 };
 
-export default Dashboard;
+export default WebsiteAnalytics;

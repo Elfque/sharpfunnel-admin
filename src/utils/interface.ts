@@ -1,7 +1,7 @@
 import { ChangeEvent } from "react";
 
 export type loginInputType = {
-  name: string;
+  name?: string;
   value: string;
   type?: string;
   handleChange: (e: ChangeEvent<HTMLInputElement>) => void;

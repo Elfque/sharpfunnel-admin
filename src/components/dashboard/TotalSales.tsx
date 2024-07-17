@@ -1,4 +1,12 @@
-import { Bar, BarChart, CartesianGrid, Tooltip, XAxis, YAxis } from "recharts";
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Tooltip,
+  XAxis,
+  YAxis,
+  ResponsiveContainer,
+} from "recharts";
 import { useState } from "react";
 
 const data = [
@@ -51,16 +59,17 @@ const TotalSales = () => {
           </div>
         ))}
       </div>
+      <ResponsiveContainer width="100%" height={300}>
+        <BarChart width={730} height={250} data={data}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
 
-      <BarChart width={730} height={250} data={data}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip />
-
-        <Bar dataKey="pv" fill="#5B58EB" />
-        <Bar dataKey="uv" fill="#A3C0FF" />
-      </BarChart>
+          <Bar dataKey="pv" fill="#5B58EB" />
+          <Bar dataKey="uv" fill="#A3C0FF" />
+        </BarChart>
+      </ResponsiveContainer>
     </div>
   );
 };

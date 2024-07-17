@@ -1,12 +1,12 @@
 import {
-  Bar,
-  BarChart,
-  CartesianGrid,
+  Line,
+  LineChart,
   Tooltip,
   XAxis,
   YAxis,
   ResponsiveContainer,
 } from "recharts";
+//   CartesianGrid,
 
 const data = [
   {
@@ -34,32 +34,41 @@ const data = [
     uv: 1890,
     pv: 4800,
   },
+  {
+    name: "Page F",
+    uv: 2390,
+    pv: 3800,
+  },
+  {
+    name: "Page G",
+    uv: 3490,
+    pv: 4300,
+  },
 ];
 
-const TrafficStats = () => {
+const ActivityLog = () => {
   return (
     <div className="bg-white p-4">
       <div className="flex justify-between">
-        <div className="">Traffic Statics</div>
+        <div className="mb-5">Activity Log (Timing)</div>
       </div>
 
-      <div className="text-[24px] font-semibold">
-        8,000{" "}
-        <span className="text-inputBorder text-[10px]">for this Quarter</span>
-      </div>
-
-      <ResponsiveContainer width="100%" height={283}>
-        <BarChart width={730} height={250} data={data}>
-          <CartesianGrid strokeDasharray="3 3" />
+      <ResponsiveContainer width="100%" height={270}>
+        <LineChart
+          width={730}
+          height={250}
+          data={data}
+          margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+        >
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
 
-          <Bar dataKey="pv" fill="#5B58EB" />
-        </BarChart>
+          <Line type="monotone" dataKey="pv" stroke="#8884d8" />
+        </LineChart>
       </ResponsiveContainer>
     </div>
   );
 };
 
-export default TrafficStats;
+export default ActivityLog;

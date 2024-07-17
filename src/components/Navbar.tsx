@@ -15,7 +15,7 @@ const Navbar = () => {
 
   const [showNav, setShowNav] = useState(false);
   return (
-    <div className="flex justify-end items-center pl-4 lg:pl-6 lg:px-6 py-3 bg-navbarBg sticky top-0 z-20 lg:z-0">
+    <div className="flex justify-end items-center pl-4 lg:pl-6 lg:px-6 py-3 bg-navbarBg sticky top-0 z-20 lg:z-[1]">
       <div className="flex justify-end items-center gap-4">
         <div className="flex gap-2 items-center">
           <div className="flex justify-center items-center w-10 h-10 bg-inputBorder rounded-full">

@@ -10,7 +10,7 @@ export const navLinks: navLinkType[] = [
 `,
   },
   {
-    url: "/user-management",
+    url: "/users",
     text: "User Management",
     icon: `<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 6H10.5C10.78 6 11 5.78 11 5.5C11 5.22 10.78 5 10.5 5H3.5C3.22 5 3 5.22 3 5.5C3 5.78 3.22 6 3.5 6ZM15 0H1C0.45 0 0 0.45 0 1V13C0 13.55 0.45 14 1 14H15C15.55 14 16 13.55 16 13V1C16 0.45 15.55 0 15 0ZM14 12H2V4H14V12ZM3.5 8H7.5C7.78 8 8 7.78 8 7.5C8 7.22 7.78 7 7.5 7H3.5C3.22 7 3 7.22 3 7.5C3 7.78 3.22 8 3.5 8ZM3.5 10H8.5C8.78 10 9 9.78 9 9.5C9 9.22 8.78 9 8.5 9H3.5C3.22 9 3 9.22 3 9.5C3 9.78 3.22 10 3.5 10Z" fill="#8F95B2"/>
@@ -18,7 +18,7 @@ export const navLinks: navLinkType[] = [
 `,
   },
   {
-    url: "/website-management",
+    url: "/websites",
     text: "Website Mgt",
     icon: `<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M15 14H1C0.45 14 0 13.55 0 13V1C0 0.45 0.45 0 1 0H15C15.55 0 16 0.45 16 1V13C16 13.55 15.55 14 15 14ZM14 4H2V12H14V4ZM4 5C4.28 5 4.53 5.11 4.71 5.29L6.71 7.29C6.89 7.47 7 7.72 7 8C7 8.28 6.89 8.53 6.71 8.71L4.71 10.71C4.53 10.89 4.28 11 4 11C3.45 11 3 10.55 3 10C3 9.72 3.11 9.47 3.29 9.29L4.59 8L3.29 6.71C3.11 6.53 3 6.28 3 6C3 5.45 3.45 5 4 5ZM9 9H12C12.55 9 13 9.45 13 10C13 10.55 12.55 11 12 11H9C8.45 11 8 10.55 8 10C8 9.45 8.45 9 9 9Z" fill="#8F95B2"/>

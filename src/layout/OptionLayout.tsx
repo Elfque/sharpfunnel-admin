@@ -23,7 +23,7 @@ const OptionLayout = ({ children }: { children: ReactNode }) => {
   }, []);
 
   return (
-    <div className="relative" ref={optionRef}>
+    <div className="relative w-fit" ref={optionRef}>
       <button onClick={() => setShowOptions(!showOptions)}>
         <FaEllipsis />
       </button>

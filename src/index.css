@@ -34,3 +34,28 @@ body {
 .tables:nth-child(odd) {
   @apply bg-white;
 }
+.right-modal {
+  @apply fixed w-screen max-w-[25rem] z-30 top-0 bg-white min-h-screen duration-500 -right-[25rem];
+}
+
+.right-modal.active {
+  @apply right-0;
+}
+
+.optionButton {
+  @apply rounded-md px-4 py-2 text-sm flex items-center gap-2 p-2 mt-2;
+}
+.modal {
+  @apply fixed bg-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-md rounded-lg z-40 text-black max-h-[30rem] overflow-y-auto;
+}
+.form-grid {
+  @apply grid grid-cols-2 gap-6;
+}
+.inputs {
+  @apply rounded-md p-2 text-sm outline-0 border border-inputBorder w-full max-w-lg text-inputBorder block bg-white;
+}
+
+.template-grid {
+  @apply grid grid-cols-3 gap-4;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
