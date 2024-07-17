@@ -1,5 +1,7 @@
+import PageLayout from "../layout/PageLayout";
+
 const Statistics = () => {
-  return <div>Statistics</div>;
+  return <PageLayout title="Statistics ">Statistics</PageLayout>;
 };
 
 export default Statistics;

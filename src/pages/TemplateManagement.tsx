@@ -1,5 +1,9 @@
+import PageLayout from "../layout/PageLayout";
+
 const TemplateManagement = () => {
-  return <div>TemplateManagement</div>;
+  return (
+    <PageLayout title="Template Management">TemplateManagement</PageLayout>
+  );
 };
 
 export default TemplateManagement;

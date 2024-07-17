@@ -1,5 +1,7 @@
+import PageLayout from "../layout/PageLayout";
+
 const Profile = () => {
-  return <div>Profile</div>;
+  return <PageLayout title="Profile">Profile</PageLayout>;
 };
 
 export default Profile;

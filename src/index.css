@@ -4,9 +4,33 @@
 @tailwind utilities;
 
 body {
+  @apply text-blackText bg-whiteBg;
   font-family: "Montserrat", sans-serif;
 }
 
 .pink-button {
   @apply bg-pinkColor text-whiteBg text-sm py-4 w-full rounded-lg;
+}
+
+.link {
+  @apply text-sm px-3 py-2 flex items-center gap-3 text-emailTextColor duration-300 cursor-pointer my-2 rounded-md w-4/5 mx-auto font-semibold;
+}
+.link path {
+  @apply fill-emailTextColor;
+}
+.link.active {
+  @apply bg-emailTextColor text-whiteBg;
+}
+.link.active path {
+  @apply fill-whiteBg;
+}
+
+.page-title-text {
+  @apply font-bold text-blackText text-xl border-b border-inputBorder pb-2;
+}
+.tabbles:nth-child(even) {
+  @apply bg-whiteBg;
+}
+.tables:nth-child(odd) {
+  @apply bg-white;
 }

@@ -5,6 +5,7 @@ import UserManagement from "./pages/UserManagement";
 import WebsiteManagement from "./pages/WebsiteManagement";
 import Profile from "./pages/Profile";
 import Statistics from "./pages/Statistics";
+import TemplateManagement from "./pages/TemplateManagement";
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/user-management" element={<UserManagement />} />
         <Route path="/website-management" element={<WebsiteManagement />} />
+        <Route path="/template-management" element={<TemplateManagement />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/ststistics" element={<Statistics />} />
+        <Route path="/statistics" element={<Statistics />} />
       </Routes>
     </Router>
   );

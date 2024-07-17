@@ -7,3 +7,16 @@ export type loginInputType = {
   handleChange: (e: ChangeEvent<HTMLInputElement>) => void;
   placeholder: string;
 };
+
+export type navLinkType = {
+  url: string;
+  text: string;
+  icon: string;
+};
+
+export type singleOverviewType = {
+  text: string;
+  data: number;
+  icon?: any;
+  type: string;
+};
