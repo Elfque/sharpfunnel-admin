@@ -5,7 +5,7 @@ import PageLayout from "../layout/PageLayout";
 import { CiSearch } from "react-icons/ci";
 
 const WebsiteManagement = () => {
-  const [openDelete, setOpenDelete] = useState(true);
+  const [openDelete, setOpenDelete] = useState(false);
 
   return (
     <PageLayout title="Website Management">
