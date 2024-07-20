@@ -49,10 +49,10 @@ body {
   @apply fixed bg-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-md rounded-lg z-40 text-black max-h-[30rem] overflow-y-auto;
 }
 .form-grid {
-  @apply grid grid-cols-2 gap-6;
+  @apply grid md:grid-cols-2 gap-6;
 }
 .inputs {
-  @apply rounded-md p-2 text-sm outline-0 border border-inputBorder w-full max-w-lg text-inputBorder block bg-white;
+  @apply rounded-md p-2 text-sm outline-0 border border-inputBorder w-full text-inputBorder block bg-white;
 }
 
 .template-grid {

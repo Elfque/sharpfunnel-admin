@@ -11,7 +11,7 @@ const SingleUser = () => {
         </div>
       </div>
       <div className="hidden lg:inline col-span-2">Mar 23, 2024</div>
-      <div className="col-span-2 hidden lg:inline">
+      <div className="col-span-2 flex justify-center">
         <OptionLayout>
           <button className="text-emailTextColor optionButton">
             <svg

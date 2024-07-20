@@ -46,18 +46,20 @@ const LeadStatistics = () => {
         <div className="text-blackText">Lead Statistic</div>
       </div>
 
-      <LineChart
-        width={730}
-        height={250}
-        data={data}
-        margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-      >
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip />
+      <div className="w-full overflow-x-auto">
+        <LineChart
+          width={730}
+          height={250}
+          data={data}
+          margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+        >
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
 
-        <Line type="monotone" dataKey="pv" stroke="#8884d8" />
-      </LineChart>
+          <Line type="monotone" dataKey="pv" stroke="#8884d8" />
+        </LineChart>
+      </div>
     </div>
   );
 };

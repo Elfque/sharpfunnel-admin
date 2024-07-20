@@ -38,7 +38,7 @@ const WebsiteManagement = () => {
         <div className="col-span-3 sm:inline hidden">Email</div>
         <div className="hidden lg:inline col-span-2">Status</div>
         <div className="hidden lg:inline col-span-2">Date Created</div>
-        <div className="col-span-2 hidden lg:inline">Actions</div>
+        <div className="col-span-2 text-center">Actions</div>
       </div>
 
       <div>
